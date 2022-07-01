@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include erp_custom_auth *.css
+recursive-include erp_custom_auth *.csv
+recursive-include erp_custom_auth *.html
+recursive-include erp_custom_auth *.ico
+recursive-include erp_custom_auth *.js
+recursive-include erp_custom_auth *.json
+recursive-include erp_custom_auth *.md
+recursive-include erp_custom_auth *.png
+recursive-include erp_custom_auth *.py
+recursive-include erp_custom_auth *.svg
+recursive-include erp_custom_auth *.txt
+recursive-exclude erp_custom_auth *.pyc
