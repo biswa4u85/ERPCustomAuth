@@ -186,3 +186,6 @@ user_data_fields = [
 # Recommended only for DocTypes which have limited documents with untranslated names
 # For example: Role, Gender, etc.
 # translated_search_doctypes = []
+override_doctype_class = {
+    "Student": "gch_custom.overrides.todo.KARANIStudent",
+}

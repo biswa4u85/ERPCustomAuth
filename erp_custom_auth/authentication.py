@@ -28,3 +28,12 @@ def login(**kwargs):
     except Exception as e:
         return {'status_code':500, 'text':str(e)}
 
+
+@frappe.whitelist(allow_guest = True)
+def get_home_page(doctype_id=None):
+    return frappe.db.sql(f"""select field,value from `tabSingles` where doctype = 'News Home Page'""",as_dict=True)
+
+@frappe.whitelist(allow_guest = True)
+def get_home_page_key(news_id=None):
+    return frappe.db.sql(f"""select title from `tabNews Category Child` where parent='News Home Page'""",as_dict=True)
+   
