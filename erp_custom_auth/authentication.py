@@ -30,6 +30,10 @@ def login(**kwargs):
 
 
 @frappe.whitelist(allow_guest = True)
+def get_data_db(doctype):
+    return frappe.db.count(doctype)
+    
+@frappe.whitelist(allow_guest = True)
 def get_home_page(doctype_id=None):
     return frappe.db.sql(f"""select field,value from `tabSingles` where doctype = 'News Home Page'""",as_dict=True)
 
