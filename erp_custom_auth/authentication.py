@@ -29,8 +29,8 @@ def login(**kwargs):
 
 
 @frappe.whitelist(allow_guest = True)
-def getDataDB(doctype):
-    return frappe.db.count(doctype)
+def getDataDB(doctype,search):
+    return frappe.db.count(doctype,search)
     
 @frappe.whitelist(allow_guest = True)
 def get_home_page(doctype_id=None):
