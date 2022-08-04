@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TII:-.###",
+ "creation": "2022-07-25 16:19:05.274209",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "inventory_item",
+  "column_break_2",
+  "quantity",
+  "section_break_4",
+  "fulfill_request",
+  "delivery_location",
+  "delivery_aisle",
+  "bill_to",
+  "date_completed",
+  "mark_as_consumed"
+ ],
+ "fields": [
+  {
+   "fieldname": "inventory_item",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Inventory Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity"
+  },
+  {
+   "default": "0",
+   "fieldname": "fulfill_request",
+   "fieldtype": "Check",
+   "label": "Fulfill Request"
+  },
+  {
+   "fieldname": "delivery_location",
+   "fieldtype": "Data",
+   "label": "Delivery Location"
+  },
+  {
+   "fieldname": "delivery_aisle",
+   "fieldtype": "Data",
+   "label": "Delivery Aisle"
+  },
+  {
+   "fieldname": "bill_to",
+   "fieldtype": "Data",
+   "label": "Bill To"
+  },
+  {
+   "depends_on": "eval:doc.fulfill_request==1;",
+   "fieldname": "date_completed",
+   "fieldtype": "Date",
+   "label": "Date Completed"
+  },
+  {
+   "default": "0",
+   "depends_on": "eval:doc.fulfill_request==1",
+   "fieldname": "mark_as_consumed",
+   "fieldtype": "Check",
+   "label": "Mark as Consumed"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-27 15:45:42.801094",
+ "modified_by": "Administrator",
+ "module": "Erp Custom Auth",
+ "name": "test Inventory Item",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

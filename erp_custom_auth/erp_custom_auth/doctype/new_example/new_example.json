@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-28 10:46:13.362094",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "inventory_item",
+  "fulfill_request",
+  "date_completed",
+  "mark_as_consumed"
+ ],
+ "fields": [
+  {
+   "fieldname": "inventory_item",
+   "fieldtype": "Data",
+   "label": "Inventory Item"
+  },
+  {
+   "default": "0",
+   "fieldname": "fulfill_request",
+   "fieldtype": "Check",
+   "label": "Fulfill Request"
+  },
+  {
+   "fieldname": "date_completed",
+   "fieldtype": "Date",
+   "label": "Date Completed"
+  },
+  {
+   "default": "0",
+   "fieldname": "mark_as_consumed",
+   "fieldtype": "Check",
+   "label": "Mark as Consumed"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-28 10:47:02.972720",
+ "modified_by": "Administrator",
+ "module": "Erp Custom Auth",
+ "name": "New example",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,131 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-26 15:12:02.783558",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "medication",
+  "section_break_2",
+  "patient",
+  "column_break_3",
+  "visit",
+  "section_break_4",
+  "quantity_to_return",
+  "column_break_6",
+  "return_location",
+  "column_break_8",
+  "return_aisle",
+  "section_break_10",
+  "return_reasonnotes",
+  "section_break_14",
+  "adjustment_date",
+  "column_break_13",
+  "credit_to_account"
+ ],
+ "fields": [
+  {
+   "fieldname": "medication",
+   "fieldtype": "Data",
+   "label": "Medication"
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "label": "Patient",
+   "options": "Test Patient"
+  },
+  {
+   "fieldname": "visit",
+   "fieldtype": "Link",
+   "label": "Visit",
+   "options": "test new Visit"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "quantity_to_return",
+   "fieldtype": "Data",
+   "label": "Quantity To Return "
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "return_location",
+   "fieldtype": "Data",
+   "label": "  Return Location"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "return_aisle",
+   "fieldtype": "Data",
+   "label": "Return Aisle"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "return_reasonnotes",
+   "fieldtype": "Small Text",
+   "label": "Return Reason/Notes"
+  },
+  {
+   "fieldname": "adjustment_date",
+   "fieldtype": "Date",
+   "label": "Adjustment Date"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "credit_to_account",
+   "fieldtype": "Data",
+   "label": "Credit To Account"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-27 17:19:15.478313",
+ "modified_by": "Administrator",
+ "module": "Erp Custom Auth",
+ "name": "Test Return Medication",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

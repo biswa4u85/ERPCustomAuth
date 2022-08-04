@@ -1,0 +1,170 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-25 16:38:53.697436",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date_received",
+  "column_break_2",
+  "vendor",
+  "column_break_4",
+  "invoice_number",
+  "section_break_6",
+  "location",
+  "column_break_8",
+  "aisle_location",
+  "column_break_10",
+  "gift_in_kind",
+  "section_break_12",
+  "inventory_item",
+  "column_break_14",
+  "quantity",
+  "column_break_16",
+  "purchase_cost",
+  "section_break_20",
+  "vendor_item_number",
+  "column_break_22",
+  "seriallot_number",
+  "column_break_24",
+  "expiration_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "date_received",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date Received ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "vendor",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Vendor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "invoice_number",
+   "fieldtype": "Data",
+   "label": "   Invoice Number"
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "aisle_location",
+   "fieldtype": "Data",
+   "label": "Aisle Location"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "gift_in_kind",
+   "fieldtype": "Check",
+   "label": "Gift in Kind"
+  },
+  {
+   "fieldname": "section_break_12",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "inventory_item",
+   "fieldtype": "Data",
+   "label": "Inventory Item ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Data",
+   "label": "Quantity ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purchase_cost",
+   "fieldtype": "Data",
+   "label": "Purchase Cost ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_20",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "vendor_item_number",
+   "fieldtype": "Data",
+   "label": "Vendor Item Number"
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "seriallot_number",
+   "fieldtype": "Data",
+   "label": "  Serial/Lot Number"
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "expiration_date",
+   "fieldtype": "Data",
+   "label": "Expiration Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-25 16:43:29.521416",
+ "modified_by": "Administrator",
+ "module": "Erp Custom Auth",
+ "name": "Test Inventory Received",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

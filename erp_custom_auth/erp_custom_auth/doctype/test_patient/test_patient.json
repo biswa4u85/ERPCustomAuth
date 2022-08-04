@@ -1,0 +1,178 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TP:-.###",
+ "creation": "2022-07-26 10:50:41.959991",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "middle_name",
+  "last_name",
+  "sex",
+  "date_of_birth",
+  "place_of_birth",
+  "occupation",
+  "phone",
+  "address",
+  "column_break_10",
+  "patient_status",
+  "external_patient_id",
+  "blood_type",
+  "clinic_site",
+  "referred_by",
+  "referred_date",
+  "religion",
+  "parentguardian",
+  "payment_profile",
+  "email",
+  "country",
+  "visit"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "First Name ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Last Name ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Data",
+   "label": "Sex"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "place_of_birth",
+   "fieldtype": "Data",
+   "label": "Place Of Birth"
+  },
+  {
+   "fieldname": "occupation",
+   "fieldtype": "Data",
+   "label": "Occupation"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "patient_status",
+   "fieldtype": "Data",
+   "label": "Patient Status"
+  },
+  {
+   "fieldname": "external_patient_id",
+   "fieldtype": "Data",
+   "label": "External Patient Id"
+  },
+  {
+   "fieldname": "blood_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Blood Type",
+   "options": "\nA+\nA-\nAB+\nAB-\nB+\nB-\nO+\nO-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "clinic_site",
+   "fieldtype": "Data",
+   "label": "Clinic Site"
+  },
+  {
+   "fieldname": "referred_by",
+   "fieldtype": "Data",
+   "label": "Referred By"
+  },
+  {
+   "fieldname": "referred_date",
+   "fieldtype": "Date",
+   "label": "Referred Date"
+  },
+  {
+   "fieldname": "religion",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Religion"
+  },
+  {
+   "fieldname": "parentguardian",
+   "fieldtype": "Data",
+   "label": "Parent/Guardian"
+  },
+  {
+   "fieldname": "payment_profile",
+   "fieldtype": "Link",
+   "label": "Payment Profile",
+   "options": "Test Payment Profile"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Data",
+   "label": "Country"
+  },
+  {
+   "fieldname": "visit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "VISIT",
+   "options": "Add New"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-27 16:57:59.606743",
+ "modified_by": "Administrator",
+ "module": "Erp Custom Auth",
+ "name": "Test Patient",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

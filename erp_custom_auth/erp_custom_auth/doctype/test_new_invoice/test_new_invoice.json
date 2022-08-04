@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "TNI:-.###",
+ "creation": "2022-07-26 17:40:43.591345",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "bill_date",
+  "column_break_2",
+  "patient",
+  "column_break_4",
+  "visit",
+  "section_break_6",
+  "external_invoice",
+  "column_break_8",
+  "payment_profile"
+ ],
+ "fields": [
+  {
+   "fieldname": "bill_date",
+   "fieldtype": "Date",
+   "label": "Bill Date"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Patient ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "visit",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Visit",
+   "options": "Test Visit New Example",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_6",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "external_invoice",
+   "fieldtype": "Data",
+   "label": "External Invoice "
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "payment_profile",
+   "fieldtype": "Link",
+   "label": "Payment Profile",
+   "options": "Test Payment Profile Example"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-27 15:23:15.918312",
+ "modified_by": "Administrator",
+ "module": "Erp Custom Auth",
+ "name": "Test New Invoice",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-07-26 14:39:46.029485",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "column_break_2",
+  "section_break_3",
+  "medication",
+  "prescription",
+  "prescription_date",
+  "quantity_requested",
+  "column_break_8",
+  "refills",
+  "fulfill_request_now"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Patient ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "medication",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Medication ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prescription",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Prescription ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "prescription_date",
+   "fieldtype": "Date",
+   "label": "Prescription Date"
+  },
+  {
+   "fieldname": "quantity_requested",
+   "fieldtype": "Data",
+   "label": "Quantity Requested ",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "refills",
+   "fieldtype": "Data",
+   "label": "Refills"
+  },
+  {
+   "default": "0",
+   "fieldname": "fulfill_request_now",
+   "fieldtype": "Check",
+   "label": "Fulfill Request Now"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-26 14:57:50.415042",
+ "modified_by": "Administrator",
+ "module": "Erp Custom Auth",
+ "name": "Test New Medication Request",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
